@@ -14,16 +14,99 @@
     --collor-title:#C4B5FD;
     --collor-title-url:#FFFFFF;
     --collor-url-onStay:#DDD6FE ;
-    --collor-description-tex: #D1D5DB;
+    --collor-description-text: #D1D5DB;
     --collor-button: #8B5CF6;
     --collor-button-text:#FFFFFF;
     
     --text-size-title:36px;
+    --txt-size-sextion-title:28px;
+    --text-size-info:20px;
     --text-size-main:18px;
+    --text-size-description:16px;
     --text-size-header:16px;
     --text-size-bth:16px;
+    --text-size-button:16px;
     
 }
+
+
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.foto{
+    width: 45%;
+}
+.foto img{
+    width: 100%;
+    display: block;
+}
+
+.section-card{
+    display: flex;
+    justify-content: space-between;
+    height: 1000px;
+    width: 100%;
+}
+.card{
+    height: 1000px;
+    width: 30%;
+    background-color: var(--block2-bc);
+    border: 5px solid var(--block1-bc);
+}
+.card-img{
+    box-shadow: 0px 3px 4px black;
+    height: 50%;
+    width: 100%;
+    
+}
+.card-img img{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    padding: 1%;
+}
+.card-title{
+    margin-top: 5%;
+    color: var(--collor-title);
+    font-size: var(--text-size-title);
+}
+.card-discription{
+    margin-top: 3px;
+    color: var(--collor-description-text);
+    font-size: var(--text-size-description);
+}
+
+
+.flex{
+    width: 48%;
+}
+.flex.a{
+    color: var(--collor-text-main);
+}
+
+.title{
+    color: var(--collor-title);
+    font-size: var(--text-size-title);
+}
+
+.discription{
+    color: var(--collor-description-text);
+    font-size: var(--text-size-description);
+    background-color: var(--block1-bc);
+}
+
+
+
 header{
     display: flex;
     justify-content: space-around;
@@ -34,58 +117,15 @@ header{
 header.a{
     color: var(--collor-text-main);
 }
+
 main{
     background-color: var(--main-bc);
     color: var(--collor-text-main);
 }
+
 footer{
      display: flex;
     justify-content: space-around;
     background-color: var(--footer-bc);
     padding: 100px;
-}
-.welcome{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-
-}
-.section-card{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-.card{
-    width: 30%;
-    padding: 3%;
-}
-.card img{
-    width: 100%;
-    display: block;
-    height: 500px;
-}
-.flex{
-    width: 48%;
-}
-.flex.a{
-    color: var(--collor-text-main);
-}
-.title{
-    color: var(--collor-title);
-    font-size: var(--text-size-title);
-}
-.discription{
-    color: var(--collor-text-main);
-    font-size: var(--text-size-main);
-    background-color: var(--block1-bc);
-    height: 100%;
-    text-size-adjust: var();
-}
-.foto{
-    width: 45%;
-    padding: 0.1%;
-}
-.foto img{
-    width: 100%;
-    display: block;
 }
