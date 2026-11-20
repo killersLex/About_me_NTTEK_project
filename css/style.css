@@ -31,7 +31,10 @@
     --text-size-button:16px;
     
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 @media (max-widht:900) {
     .card-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -57,15 +60,17 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-
+    height: 860px;
 }
 
 .foto{
     width: 45%;
+    max-height: 840px;
 }
 .foto img{
     width: 100%;
     display: block;
+    max-height: 840px;
 }
 .flex{
     width: 48%;
@@ -95,10 +100,6 @@ main{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 20px;
-            }
-            .card-grid{
-                width: 100%;
-                padding: 15px;
                 border: 1px solid var(--block2-bc);
             }
             .card-grid img{
@@ -257,3 +258,16 @@ footer{
     padding: 100px;
 }
 /* #endregion */
+
+.write{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: blueviolet;    
+}
+.write a{
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid ;
+}
